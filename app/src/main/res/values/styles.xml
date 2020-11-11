@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+    <style name="title" >
+        <item name="android:textColor">#fff</item>
+    </style>
+
+
+    <style name="title.expanded">
+        <item name="android:textSize">30dp</item>
+    </style>
+    <style name="title.collapsed">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="subtitle">
+        <item name="android:textColor">#fff</item> <!-- I only change the color -->
+    </style>
+    <style name="yourstyle" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">2sp</item>
+    </style>
+</resources>

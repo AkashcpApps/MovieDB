@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="15dp"
+        android:elevation="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/tvshow_images"
+                android:layout_height="200dp">
+            </ImageView>
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:stepSize="0.1"
+                android:secondaryProgressTint="#FFE500"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:progressTint="#FFE500"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/silver"
+                android:rating="3.5" />
+
+            <TextView
+                android:id="@+id/overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_margin="5dp"
+                android:text="Overview"
+                android:textColor="@color/black"
+                android:textSize="12sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#EF7676"
+            android:alpha="0.5"
+            android:layout_height="200dp">
+        </View>
+        <TextView
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="165dp"
+            android:layout_width="wrap_content"
+            android:text="@string/series_name"
+            android:textStyle="bold"
+            android:id="@+id/title"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    android:id="@+id/card_view"
+    app:cardElevation="12dp"
+    app:rippleColor="@color/purple_color"
+    app:cardCornerRadius="25dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/movie_image"
+            android:layout_height="300dp">
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Movie Name"
+            android:id="@+id/movie_title"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="27-8-2006"
+            android:id="@+id/date"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="left"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:stepSize="0.1"
+        android:secondaryProgressTint="#FFE500"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:progressTint="#FFE500"
+
+        android:layout_marginTop="310dp"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/silver"
+        android:rating="3.5" />
+
+</com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

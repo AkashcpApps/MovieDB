@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_movie"
+        android:icon="@drawable/ic_movies"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:title="@string/movie" />
+
+    <item
+        android:id="@+id/navigation_TV_Shows"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:icon="@drawable/ic_tvshows"
+        android:title="@string/tv_shows" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:icon="@drawable/ic_new_24"
+        android:title="Upcoming Movies" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="title_profile" />
+</menu>

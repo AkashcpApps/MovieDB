@@ -1,0 +1,50 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/linear_angadi"
+    app:cardCornerRadius="4dp"
+    android:layout_alignParentStart="true"
+    android:id="@+id/searchcard"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="0dp"
+            android:background="@null"
+            android:gravity="center|left"
+            android:fontFamily="sans-serif-condensed-light"
+            android:id="@+id/search_bar"
+            android:inputType="text"
+            android:padding="5dp"
+            android:adjustViewBounds="true"
+            android:layout_weight="7"
+            android:textColorHint="@color/black"
+            android:hint="Search here..."
+            android:layout_height="55dp">
+        </EditText>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/microphone"
+            android:background="@color/white"
+            android:src="@drawable/ic_mic"
+            android:layout_height="match_parent">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:tint="@color/white"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search"
+            android:background="@color/design_default_color_primary" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
