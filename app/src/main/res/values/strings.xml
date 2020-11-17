@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">MovieDB</string>
-    <string name="API_KEY">c2560725a05e7b27ecbd8fae936ccd60</string>
+    <string name="API_KEY"><---API_KEY---></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="movie">Movie</string>
